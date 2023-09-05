@@ -12,6 +12,6 @@ console.log(timeNowMS);
 
 console.log(expirationTime);
 
-const timeRemaining = timeNowMS - expirationTime;
+const remainingTime = timeNowMS - expirationTime;
 
-console.log(timeNowMS);
+console.log(remainingTime);
