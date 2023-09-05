@@ -43,8 +43,7 @@ function convertMsInTime(remainingTime) {
 
     }
 } */
-
-setInterval(function () {
+const expiringTime = setInterval(function () {
 
     const timeNowMS = new Date().getTime();
 
@@ -62,6 +61,8 @@ setInterval(function () {
     if (remainingTime < 1) {
 
         document.getElementById('time').innerHTML = 'tempo scaduto';
+
+        clearInterval(expiringTime);
 
     } else {
 
